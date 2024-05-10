@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My_HomeWork</title>
+</head>
+<body>
+<form id="registrationForm">
+<input type="text" id="username" placeholder="Имя пользователя" required>
+<input type="password" id="password" placeholder="Введите пароль">
+<span class="toggle">👁️</span>
+<script>
+    const toggle = document.querySelector('.toggle');
+    const password = document.getElementById('password');
+  
+    toggle.addEventListener('click', function (e) {
+      // переключение типа атрибута
+      const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+      password.setAttribute('type', type);
+      // переключение иконки
+      this.textContent = this.textContent === '👁️' ? '👁️‍🗨️' : '👁️';
+    });
+  </script>
+<input type="password" id="confirmPassword" placeholder="Подтвердите пароль" required>
+<select id="gender">
+<option value="male">Мужской</option>
+<option value="female">Женский</option>
+</select>
+<input type="checkbox" id="terms" required> Я согласен с условиями
+<button type="submit" class="but">Зарегистрироваться</button>
+</form>
+<div id="result"></div>
+<script src="my.js"></script>
+<link rel="stylesheet" href="style.css">
+</body>
+</html>
