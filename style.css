@@ -1,0 +1,48 @@
+#registrationForm {
+display: flex;
+flex-direction: column;
+width: 300px;
+}
+#registrationForm input,
+#registrationForm select,
+#registrationForm button {
+margin-top: 15px; /* расстояние между элементами */
+}
+.toggle{
+display: flex;
+margin-left:300px;
+margin-top:-25px;
+cursor: pointer;
+}
+#terms{
+display: flex;
+position: relative;
+left:40px;   
+top:20px;
+}
+body{
+background-color: blue;
+color:red;
+}
+form{
+background-color: aqua;
+display: flex;
+position: relative;
+top:200px;
+left: 700px;
+}
+.but{
+background-color: beige;
+color: cadetblue;
+border: 1px solid beige;
+}
+input{
+background-color:rgb(97, 5, 5);
+}
+#result{
+display: flex;
+position:relative;
+top:200px;
+left: 700px;
+width:400px;
+}
